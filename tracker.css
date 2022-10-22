@@ -1,6 +1,13 @@
+
+@font-face{
+    src: url(/fonts/Nosifer-Regular.ttf);
+    font-family: nos;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: "nos";
 }
 
 
@@ -109,7 +116,7 @@ input,button{
     transition: 0.4s;
  }
  #tasks .task .content .text:not(:read-only){
-    color: rgb(5, 228, 5);
+    color: rgb(65, 157, 110);
  }
 
  #task .task .actions{
@@ -136,7 +143,7 @@ input,button{
  }
 
  .task .action .edit{
-    background-color: rgb(4, 247, 4);
+    background-color: rgb(111, 193, 168);
     border-radius: 8px;
     font-size: 16px;
     color: rgb(17, 82, 17);
@@ -146,7 +153,7 @@ input,button{
 
 
  .task .action .remove{
-    background-color: rgb(255, 72, 0);
+    background-color: rgb(255, 153, 0);
     border-radius: 8px;
     font-size: 16px;
     color: rgb(153, 40, 40);
@@ -154,7 +161,7 @@ input,button{
  }
 
  .task .action .edit:hover{
-    background-color: rgb(19, 206, 147);
+    background-color: rgb(39, 144, 179);
     border-radius: 8px;
     font-size: 17px;
     color: rgb(17, 82, 17);
@@ -163,10 +170,154 @@ input,button{
 
 
  .task .action .remove:hover{
-    background-color: rgb(226, 12, 91);
+    background-color: rgb(226, 87, 12);
     border-radius: 8px;
     font-size: 17px;
     color: rgb(153, 40, 40);
     padding :5px;
  }
+
+ @media screen and (max-width:320px) {
+    body{
+        display: flex;
+        background-color: rgb(76, 52, 85);
+        flex-direction: column;
+        min-height: 100vh;
+        
+    }
+       
+        .Header{
+            padding: 2rem 1rem;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .Header h1{
+            font-size: 1rem;
+            color:rgb(213, 103, 213);
+            margin-bottom: 1rem;
+        }
+
+        #new-task-input{
+            flex: 1 1 0%;
+            background-color:rgb(60, 45, 64);
+            padding:.5rem;
+            border-radius: .5rem;
+            margin-right: .5rem;
+            color:rgb(191, 114, 238);
+            font-size:.55rem
+         }
+
+         #new-task-submit{
+            color:rgb(130, 46, 148);
+            font-size: .5rem;
+            background-color: rgb(194, 132, 198);
+            border-radius: 20px;
+            padding: 7px;
+         }
+
+         main{
+            padding: .5rem .5rem;
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+         }
+        
+         .task-list{
+            padding: .2rem;
+            text-align: center;
+         }
+        
+         .task-list h2{
+            font-size: 1rem;
+            color:rgb(190, 114, 195);
+            margin: .5rem;
+         }
+        
+         #tasks .task{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(203, 114, 196);
+            padding: .5rem;
+            border-radius: .5rem;
+            margin-bottom: .5rem;
+         }
+
+         #tasks .task .content{
+            flex: 1 1 0%;
+         }
+        
+         #tasks .task .content .text{
+            color: rgb(91, 18, 114);
+            font-size: .525rem;
+            width: 100%;
+            display: block;
+            transition: 0.4s;
+         }
+
+         .task .action .edit{
+            background-color: rgb(111, 193, 168);
+            border-radius: 8px;
+            font-size: 6px;
+            color: rgb(17, 82, 17);
+            padding: 5px;
+            margin: .2rem;
+         }
+        
+        
+         .task .action .remove{
+            background-color: rgb(255, 153, 0);
+            border-radius: 10px;
+            font-size: 6px;
+            color: rgb(153, 40, 40);
+            padding :px;
+         }
+
+
+ .task .action .edit:hover{
+    background-color: rgb(39, 144, 179);
+    border-radius: 8px;
+    font-size: 17px;
+    color: rgb(17, 82, 17);
+    padding: 5px;
+ }
+
+
+ .task .action .remove:hover{
+    background-color: rgb(226, 87, 12);
+    border-radius: 8px;
+    font-size: 17px;
+    color: rgb(153, 40, 40);
+    padding :5px;
+ }
+
+ #new-task-submit:active{
+    background-color: rgb(180, 90, 150);
+    font-size: .55rem;
+ }
+
+ 
+        
+ .task .action .edit:hover{
+    background-color: rgb(39, 144, 179);
+    border-radius: 8px;
+    font-size: 7px;
+    color: rgb(17, 82, 17);
+    padding: 5px;
+ }
+
+
+ .task .action .remove:hover{
+    background-color: rgb(226, 87, 12);
+    border-radius: 8px;
+    font-size: 7px;
+    color: rgb(153, 40, 40);
+    padding :5px;
+ }
+
+    }
+
+
 

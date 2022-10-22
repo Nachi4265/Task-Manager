@@ -1,9 +1,36 @@
+// "use strict"
+
+// fetch("http://127.0.0.1:5500/")
+//     .then((Response)=>{
+//         Response.json();
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//     })
+
+
 window.addEventListener("load",() =>{
     const form = document.querySelector("#task-form");
-    const input = document.querySelector("#new-task-input");
+    const input= document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
 
     // console.log(form);
+
+    // const fs = require("fs");
+
+    // fs.readFile("test.txt,",'utf8',(err,data)=>{
+    //     if(err){
+    //         console.error(err);
+    //         return;
+    //     }
+    //     console.log(data)
+    // })
+
+
+
+
+
+
 
     form.addEventListener("submit", (e) => {
         e.preventDefault(); 
@@ -87,3 +114,6 @@ window.addEventListener("load",() =>{
     });
    });
 });
+
+
+
